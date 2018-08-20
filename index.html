@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Scheduler</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/style/style.css" />
+
+
+</head>
+
+<body>
+    <!--Jumbotron-->
+    <div class="container jumbotron text-center large" id="jumboTitle">
+        Train Scheduler
+        <!--Need to make this text bigger-->
+        <h1>
+            Choo Choo Yo
+        </h1>
+    </div>
+
+    <!--the table for the train and their times-->
+    <div class="container ">
+        <h2>Current Train Schedule</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Train Name</th>
+                    <th>Destination</th>
+                    <th>Frequency (min)</th>
+                    <th>Next Arrival</th>
+                    <th>Minutes Away</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>a</td>
+                    <td>D</td>
+                    <td>j</td>
+                    <td>a</td>
+                    <td>a</td>
+                </tr>
+                <tr>
+                    <td>Mary</td>
+                    <td>Moe</td>
+                    <td>mary@example.com</td>
+                    <td>mary@example.com</td>
+                    <td>mary@example.com</td>
+                </tr>
+                <tr>
+                    <td>July</td>
+                    <td>Dooley</td>
+                    <td>july@example.com</td>
+                    <td>mary@example.com</td>
+                    <td>mary@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <br>
+    <p class='container center'>---------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+
+    <!-- Form for inputing Train infromation-->
+    <div class='container center'>
+        <form>
+            <div class="form-group ">
+                <label for="formGroupExampleInput ">Train Name</label>
+                <input type="text " class="form-control " id="train-input ">
+            </div>
+            <div class="form-group ">
+                <label for="inputCity ">Destination</label>
+                <input type="text " class="form-control " id="destination-input ">
+            </div>
+            <div class="form-group ">
+                <label for="formGroupExampleInput ">First Train Time (HH:mm - military time)</label>
+                <input type="text " class="form-control " id="firstTrain-input ">
+            </div>
+            <div class="form-group ">
+                <label for="formGroupExampleInput ">Frequency (min)</label>
+                <input type="number " class="form-control " id="frequency-input ">
+            </div>
+            <button type="submit " class="btn btn-primary mb-2 ">Submit</button>
+        </form>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- FireBase Script-->
+    <script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js "></script>
+
+    <!--jQuery-->
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='
+        crossorigin='anonymous'></script>
+
+    <!--javaScript-->
+    <script src="assets/javaScript/logic.js "></script>
+
+
+</body>
+
+</html>
